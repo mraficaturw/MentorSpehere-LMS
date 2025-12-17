@@ -1,0 +1,120 @@
+# ========================================
+# ENVIRONMENT & SECRETS (CRITICAL)
+# ========================================
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.staging
+*.env
+!.env.example
+
+# Firebase credentials (NEVER commit these!)
+**/firebase-credentials.json
+**/firebase-admin*.json
+**/serviceAccountKey.json
+**/service-account*.json
+firebase-*.json
+!firebase.json
+
+# API Keys & Secrets
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+credentials/
+
+# ========================================
+# NODE.JS / FRONTEND
+# ========================================
+node_modules/
+dist/
+dist-ssr/
+build/
+.cache/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Package manager
+.npm
+.yarn
+.pnpm-store/
+bun.lockb
+
+# ========================================
+# GO BACKEND
+# ========================================
+# Binary files
+backend/bin/
+backend/main
+backend/*.exe
+backend/*.dll
+backend/*.so
+backend/*.dylib
+*.exe
+*.exe~
+*.out
+
+# Go specific
+backend/vendor/
+backend/tmp/
+*.test
+*.prof
+coverage.out
+coverage.html
+
+# ========================================
+# EDITOR & IDE
+# ========================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.iml
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# JetBrains IDEs
+.idea/
+*.ipr
+*.iws
+
+# ========================================
+# OS GENERATED
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ========================================
+# MISCELLANEOUS
+# ========================================
+*.bak
+*.backup
+*.tmp
+*.temp
+*.cache
+.vercel
+.netlify
